@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Master</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <form id="odds" class="p-3">
+        <h1>Game Master Emulator</h1>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="actingRank">Acting Rank / Odds</label>
+                    <select name="actingRank" id="actingRank" class="form-control">
+                        <option value="0">Miniscule 2+</option>
+                        <option value="1">Miniscule / Impossible</option>
+                        <option value="2">Weak / No Way</option>
+                        <option value="3">Low / Very Unlikely</option>
+                        <option value="4">Below Average / Unlikely</option>
+                        <option value="5" selected>Average / 50/50</option>
+                        <option value="6">Above Average / Somewhat Likely</option>
+                        <option value="7">High / Very Likely</option>
+                        <option value="8">Exceptional / Near Sure Thing</option>
+                        <option value="9">Incredible / A Sure Thing</option>
+                        <option value="10">Awesome / Has to Be</option>
+                        <option value="11">Superhuman</option>
+                        <option value="12">Superhuman 2+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="actingRS">Acting Rank Shift</label>
+                    <input type="number" class="form-control" id="actingRS">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="difficultyRank">Difficulty Rank / Chaos Factor</label>
+                    <select name="difficultyRank" id="difficultyRank" class="form-control">
+                        <option value="0">Miniscule 2+</option>
+                        <option value="1">Miniscule / 9</option>
+                        <option value="2">Weak / 8</option>
+                        <option value="3">Low / 7</option>
+                        <option value="4">Below Average / 6</option>
+                        <option value="5" selected>Average / 5</option>
+                        <option value="6">Above Average / 4</option>
+                        <option value="7">High / 3</option>
+                        <option value="8">Exceptional / 2</option>
+                        <option value="9">Incredible / 1</option>
+                        <option value="10">Awesome</option>
+                        <option value="11">Superhuman</option>
+                        <option value="12">Superhuman 2+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="difficultyRS">Difficulty Rank Shift</label>
+                    <input type="number" class="form-control" id="difficultyRS">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary" id="answer" >Get Answer</button>
+            </div>
+        </div>
+    </form>
+    <div id="output" class="p-3">
+
+    </div>
+    <script type="application/javascript" src="js/randomColor.js"></script>
+    <script type="application/javascript" src="js/game-master.js"></script>
+</body>
+</html>
